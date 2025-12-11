@@ -1,0 +1,14 @@
+body{
+    background-color: burlywood;
+}
+h1{
+    text-align: center;
+}
+
+#retangulo {
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid black; 
+    margin-left: 180px;
+}

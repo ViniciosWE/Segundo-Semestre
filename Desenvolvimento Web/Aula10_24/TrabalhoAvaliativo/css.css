@@ -1,0 +1,32 @@
+.cor {
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+body {
+    background-color: burlywood;
+}
+
+#tabela {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: gray;
+    width: 800px;
+}
+.desaparece{
+    visibility: hidden;
+    width: 25px;
+    height: 25px;
+}
+
+
+

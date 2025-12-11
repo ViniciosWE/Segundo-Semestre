@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+#minhaDiv {
+    display: flex;
+    flex-direction: column;
+}
+.linha {
+    display: flex;
+    justify-content: center;
+}
+.retangulo {
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid black; 
+    border-radius: 20px;
+}

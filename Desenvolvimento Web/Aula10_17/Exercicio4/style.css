@@ -1,0 +1,28 @@
+body{
+    background-color: burlywood;
+}
+h1{
+    color: blue;
+}
+
+#conteiner1{
+    margin-top: 50px;
+    background-color: white;
+    margin-left: 25%;
+    border: 10px solid black;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    width: 500px;
+}
+
+#container2{
+    background-color: white;
+    margin-top: 10px;
+    border: 10px solid black;
+    padding: 50px;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 20px;
+    width: 500px;
+}
