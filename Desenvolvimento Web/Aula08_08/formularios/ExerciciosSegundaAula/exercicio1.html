@@ -1,0 +1,188 @@
+<html>
+    <head>
+  </head>
+  
+  <body>
+      <div id="conteudo">
+    
+       <h2>Elementos de formulários HTML (<a href="#input">INPUT</a> | <a href="#select">SELECT</a> | <a href="#textarea">TEXTAREA</a>)</h2>
+  
+       <a name="input"></a>
+       <div id="secao"> INPUT </div>
+       
+           <br>
+           
+           <b>Propósito</b>: a tag INPUT define um campo de entrada de dados. Em um formulário, cada campo é considerado uma variável que possui um nome e um tipo específico.
+           
+           <br><br>
+           
+           <b>Utilização</b>: <br><br>
+           
+              <form name="teste" action="#">
+              <dd><table border="0">
+                  <tbody><tr>
+                      <td>&lt;input type="<b>text</b>" name="nome" value="Gustavo Rissetti" size=8 maxlength=20&gt; <br><br></td>
+                      <td><input type="text" name="nome" value="Vinicios " size="20" maxlength="30">  <br><br></td>
+                  </tr>
+                  <tr>
+                      <td>&lt;input type="<b>password</b>" name="senha" value="12345" size=6 maxlength=6&gt; <br><br></td>
+                      <td><input type="password" name="senha" value="12345" size="6" maxlength="6"> <br><br></td>
+                  </tr>
+                  <tr>
+                      <td>&lt;input type="<b>radio</b>" name="sexo" value="M"&gt; Masculino &lt;br&gt; <br>
+                          &lt;input type="<b>radio</b>" name="sexo" value="F"&gt; Feminino <br><br>
+                      
+                      </td>
+                      <td><input type="radio" name="sexo" value="M"> Masculino <br>
+                          <input type="radio" name="sexo" value="F"> Feminino <br><br>
+                      </td>
+                  </tr>											
+                  <tr>
+                      <td>&lt;input type="<b>checkbox</b>" name="ida_e_volta" value="S" checked&gt; Ida e volta<br><br></td>
+                      <td><input type="checkbox" name="ida_e_volta" value="S" checked=""> Ida e volta<br><br></td>
+                  </tr>		
+  
+                  <tr>
+                      <td>&lt;input type="<b>hidden</b>" name="escondido" value="este valor estava escondido"&gt;<br><br></td>
+                      <td><input type="hidden" name="escondido" value="este valor estava escondido"> <br><br></td>
+                  </tr>	
+  
+                  <tr>
+                      <td>&lt;input type="<b>file</b>" size="90" name="curriculo"&gt;<br><br></td>
+                      <td><input type="file" size="90" name="curriculo"> <br><br></td>
+                  </tr>		
+  
+                  <tr>
+                      <td>&lt;input type="<b>button</b>" name="ok" value="ok" onClick="alert('ok');" &gt; <br><br></td>
+                      <td><input type="button" name="ok" value="ok" onclick="alert('ok');"> <br><br></td>
+                  </tr>
+                  
+                  <tr>
+                      <td>&lt;input type="<b>reset</b>" name="limpar" value="Limpar" &gt; <br><br></td>
+                      <td><input type="reset" name="limpar" value="Limpar"> <br><br></td>
+                  </tr>
+                  
+                  <tr>
+                      <td>&lt;input type="<b>submit</b>" name="enviar" value="Enviar" &gt; <br><br></td>
+                      <td><input type="submit" name="enviar" value="Enviar"> <br><br></td>
+                  </tr>					
+                  
+                  <tr>
+                      <td>&lt;input type="<b>image</b>" src="figura.jpg" value="submit" &gt; </td>
+                      <td><input type="image" src="img/submit.jpg" value="submit"> </td>
+                  </tr>					
+                              
+              </tbody></table>
+              </dd></form>
+       
+           <b>Parâmetros</b>:
+           
+           <ul>
+              <li><tt><b>type</b></tt>: define o tipo de entrada, podendo ser:</li>
+                  <ul>
+                      <li><b><tt>text</tt></b>: área de texto;</li>
+                      <li><b><tt>password</tt></b>: texto com leitura protegida (campo senha);</li>
+                      <li><b><tt>hidden</tt></b>: entrada oculta, não possui visualização;</li>
+                      <li><b><tt>radio</tt></b>: botão de opção única;</li>
+                      <li><b><tt>checkbox</tt></b>: botão de opção múltipla;</li>
+                      <li><b><tt>button</tt></b>: botão com ação a ser definida pelo programador;</li>
+                      <li><b><tt>reset</tt></b>: botão com ação de limpar os dados do formulário;</li>
+                      <li><b><tt>submit</tt></b>: botão com ação de enviar (submeter) os dados para a ação do formulário.</li>
+                      <li><b><tt>image</tt></b>: imagem clicável para submeter os dados para a ação do formulário.</li>
+                      <br>
+                  </ul>
+              
+              <li><b><tt>name</tt></b>: define o nome do campo (nome do objeto para o formulário)</li>
+              <li><b><tt>value</tt></b>: define o valor do campo</li>
+              <li><b><tt>checked</tt></b>: indica que o campo está ou não marcado (utilizado para valores padrão)</li>
+              <li><b><tt>size</tt></b>: especifica o tamanho do campo (a quantidade de caracteres a serem exibidos)</li>
+              <li><b><tt>maxlength</tt></b>: define a quantidade máxima de caracteres que o campo poderá receber.</li>
+              <li><b><tt>src</tt></b>: se o tipo do <tt>input</tt> for <tt>image</tt> o parâmetro <tt>src</tt> indica o caminho do arquivo de imagem.</li>
+              
+           </ul>
+    
+       <a name="select"></a>
+       <div id="secao"> SELECT </div> 
+       
+           <br>
+           
+           <b>Propósito</b>: a tag SELECT define uma lista de itens que podem ser selecionados pelo usuário.
+           
+           <br><br>
+           
+           <b>Utilização</b>: <br><br>
+           
+              <dd><table border="0">
+                  <tbody><tr>
+                      <td>&lt;<b>select</b> name="sexo" size=2&gt; <br>
+                          <dd>&lt;option&gt;Masculino &lt;/option&gt; 
+                          </dd><dd>&lt;option&gt;Feminino &lt;/option&gt; <br>
+                          &lt;/<b>select</b>&gt; <br><br>
+                      </dd></td>
+                      <td><select name="sexo" size="2"> <option>Masculino</option> <option>Feminino</option> </select> <br><br></td>
+                  </tr>
+                  <tr>
+                      <td>&lt;<b>select</b> name="UF" size=1&gt; <br>
+                          <dd>&lt;option&gt;RS &lt;/option&gt; 
+                          </dd><dd>&lt;option&gt;SC &lt;/option&gt; 					    
+                          </dd><dd>&lt;option&gt;PR &lt;/option&gt; <br>
+                          &lt;/<b>select</b>&gt; <br><br>
+                      </dd></td>
+                      <td><select name="UF" size="1"> <option>RS</option> <option>PR</option> <option>SC</option> </select> <br><br></td>
+                  </tr>
+                  <tr>
+                      <td>&lt;<b>select</b> name="cursos" size=3 multiple&gt; <br>
+                          <dd>&lt;option&gt;Técnico em Informática &lt;/option&gt; 
+                          </dd><dd>&lt;option&gt;Análise e Desenvolvimento de Sistemas &lt;/option&gt; 					    
+                          </dd><dd>&lt;option&gt;MSI &lt;/option&gt; <br>
+                          &lt;/<b>select</b>&gt; <br><br>
+                      </dd></td>
+                      <td><select name="cursos" size="3" multiple=""> <option>Técnico em Informática</option> <option>Análise e Desenvolvimento de Sistemas</option> <option>MSI</option> </select> <br><br></td>
+                  </tr>		
+                  
+              </tbody></table>
+       
+           <b>Parâmetros</b>:
+           
+           <ul>
+              <li><b><tt>name</tt></b>: define o nome do campo (nome do objeto para o formulário)</li>
+              <li><b><tt>size</tt></b>: define o número de itens que serão exibidos (se o tamanho for igual a um então o campo se comporta como uma caixa de seleção).</li>
+              <li><b><tt>multiple</tt></b>: define que vários itens da lista poderão ser selecionados.</li>
+              <li><b><tt>option</tt></b>: define as opções da lista, que deverão ser delimitadas pelas tags &lt;option&gt; &lt;\option&gt;.</li>			
+           </ul>
+           
+       <a name="textarea"></a>	 
+       <div id="secao"> TEXTAREA </div> 
+       
+           <br>
+           
+           <b>Propósito</b>: a tag TEXTAREA define uma área de texto com múltiplas linhas.
+           
+           <br><br>
+           
+           <b>Utilização</b>: <br><br>
+           
+              </dd><dd><table border="0">
+                  <tbody><tr>
+                      <td>&lt;<b>textarea</b> name="memorial" rows=4 cols=50&gt; 
+                      <dd>Aqui vai o texto... <br>
+              &lt;<b>textarea</b>&gt;<br><br></dd></td>
+                      <td><textarea name="memorial" rows="4" cols="50"> Aqui vai o texto... </textarea> <br><br></td>
+                  </tr>
+              </tbody></table>
+       
+           <b>Parâmetros</b>:
+           
+           <ul>
+              <li><b><tt>name</tt></b>: define o nome do campo (nome do objeto para o formulário)</li>
+              <li><b><tt>rows</tt></b>: define o número de linhas da área de texto.</li>
+              <li><b><tt>cols</tt></b>: define o número de colunas da área de texto.</li>
+              
+           </ul>
+           
+       
+    </dd></div>     
+  
+  
+  
+  </body></html>
